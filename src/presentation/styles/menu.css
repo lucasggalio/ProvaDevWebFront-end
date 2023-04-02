@@ -1,0 +1,44 @@
+:root {
+    --bg-dark: white;
+    --menu-height: 65px;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-dark);
+    padding: 0 100px;
+    height: var(--menu-height);
+    position: sticky;
+    top: 0;
+
+    z-index: 99;
+}
+
+li {
+    list-style: none;
+}
+
+nav img {
+    height: 45px;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+nav ul a {
+    font-size: 20px;
+    color: var(--pink);
+    text-decoration: none;
+    margin: 0 35px;
+}
+
+nav ul a svg {
+    display: none;
+}

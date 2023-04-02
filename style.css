@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 40px 50px;
+}
+
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background: url(./images/homemEngenheiro.jpg);
+    background-size: cover;
+    background-position: right;
+    padding: 150px 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+a {
+    color: #fff;
+}
+
+header.sticky a {
+    color: #fff;
+}
+
+.content-image {
+    display: flex;
+    justify-content: center;
+}
+
+.banner h2 {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.banner h2 span {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.banner h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn {
+    position: relative;
+    background: #2196f3;
+    display: inline-block;
+    color: #fff;
+    margin-top: 50px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.logo {
+    color: #fff;
+}
+
+  /* header */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    z-index: 1000;
+    transition: 0.5s;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.header li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+header.sticky {
+    background-color: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+header.sticky .logo {
+    color: #111;
+}
+
+header.sticky .menu-icon .navicon, 
+header.sticky .menu-icon .navicon::before, 
+header.sticky .menu-icon .navicon::after {
+    background: #111;
+}
+
+
+.header li a:hover,
+.header .menu-btn:hover {
+    background-color: #f4f4f4;
+    border-radius: 0 0 10px 10px;
+    color: #2196f3;
+}
+
+header.sticky li a:hover, 
+header .menu-btn:hover {
+    background-color: #111;
+    color: #2196f3;
+}
+
+.header.sticky li a:hover, 
+.header.sticky .menu-btn:hover {
+    background: #fff;
+    color: #2196f3;
+}
+
+
+.header .logo {
+    display: block;
+    float: left;
+    font-size: 1.5em;
+    padding: 30px;
+    text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.header.sticky .menu {
+    background: #fff;
+}
+
+.header.sticky .menu a {
+    color: #111;
+}
+
+header .menu a {
+    color: #111;
+}
+
+header.sticky .menu {
+    background: #111;
+}
+
+header.sticky .menu a {
+    color: #fff;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+    padding: 40px;
+    position: relative;
+    user-select: none;
+}
+
+.header .menu-icon .navicon {
+    background: #fff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+    background: #fff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+max-height: 390px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+top: 0;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.content_ {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.contentBx h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.w50 {
+    min-width: 50%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.img {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.my-history {
+    background: #fff;
+}
+
+.heading.white {
+    color: #fff;
+}
+
+.my-history .content_ {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.my-history .content_ .serviceBx {
+    padding: 20px;
+    background: #f5f5f5;
+    color: #111;
+    max-width: 320px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.my-history .content_ .serviceBx:hover {
+    background: #2196f3;
+}
+
+.my-history .content_ img {
+    max-width: 600px;
+}
+
+.color-white {
+    color: #fff;
+}
+
+.style {
+    color: #111;
+}
+
+.my-history .content_ .serviceBx h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    background: #222;
+}
+
+.container-card section {
+    padding: 0;
+}
+
+.card-i {
+    flex: 0 0 280px; 
+    margin: 30px;
+    text-align: center;
+}
+
+.container-card img{
+    max-width: 100%;
+    width: 100%;
+}
+
+.texts{
+    padding: 18px 0; 
+    margin-bottom: 10px;
+}
+
+.style__title {
+    font-size: 20px;
+    text-align: start;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #c0c0c0;
+}
+
+.style__paragraph {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 4px;
+    color: #c0c0c0;
+    text-align: start;
+}
+
+.work .content_ {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.work .content_ .workBx {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.work .content_ .workBx img {
+    max-width: 100%;
+    width: 500px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.testimonial {
+    background-color: #f7f7f7;
+}
+
+.testimonial .content_ {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonial .content_ .testimonialBx {
+    max-width: calc(100% - 20px);
+    padding: 40px 20px;
+    margin: 10px;
+    background-color: #2196f3;
+}
+
+.testimonial .content_ .testimonialBx p {
+    color: #fff;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.testimonial .content_ .testimonialBx h3 {
+    margin-top: 20px;
+    text-align: end;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1em;
+}
+
+.testimonial .content_ .testimonialBx h3 span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.ImagePessoa {
+    min-width: 60%;
+}
+
+.ImagePessoa .imageajust {
+    display: flex;
+    justify-content: center;
+}
+
+.contact {
+    background: #111;
+}
+
+.icon-contact {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.icon-contact .icon-ajust ion-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.icon-contact .whatsapp {
+    color: #34af23;
+}
+
+.icon-contact .instagram {
+    color: #C13584;
+}
+
+.icon-ajust {
+    padding: 5px 10px;
+}
+
+.title-contact {
+    text-align: center;
+}
+
+.contactInfo {
+    margin: 20px 0;
+    min-width: 40%;
+    color: #fff;
+}
+
+.contactInfoBx {
+    position: relative;
+}
+
+.contactInfoBx .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contactInfoBx .box .icon {
+    min-width: 40px;
+    padding-top: 4px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+} 
+
+
+.contactInfoBx .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contactInfoBx .box .text h3 {
+    font-weight: 500;
+    color: #2196f3;
+    margin-bottom: 0;
+}
+
+.copyright {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.title-menu {
+    display: flex;
+}
+
+.title-ajust {
+    margin-right: 140px;
+}
+
+.heading h2 {
+    font-size: 24px;
+}

@@ -1,0 +1,129 @@
+/* 48em = 768px */
+
+@media (max-width: 48rem) {
+    .services .content_ img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 48rem) {
+
+    .banner {
+        padding: 150px 80px 20px;
+    }
+
+    .header .logo {
+        padding: 20px;
+    }
+
+    .header li {
+        float: left;
+    }
+    .header li a {
+        color: #fff;
+        padding: 25px 15px 10px;
+    }
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .header .menu-icon {
+        display: none;
+    }
+
+    .contactInfoBx  {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .contactInfoBx .box {
+        margin: 0 20px;
+    }
+
+    .contentBx {
+        padding: 0 100px;
+    }
+}
+
+@media (min-width: 62rem) {
+
+    .header li a {
+        padding: 25px 22px 10px;
+    }
+
+    .banner h2 {
+        font-size: 3rem;
+    }
+
+    .banner h2 span {
+        font-size: 3.8rem;
+    }
+
+    .btn {
+        padding: 10px 40px;
+        font-size: 1.2rem;
+    }
+
+    .work .content_ {
+        flex-direction: row;
+    }
+
+    .work .content_ .workBx {
+        max-width: 550px;
+    }
+
+    .testimonial .content_ {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 87.5rem) {
+    
+    .work .content_ .workBx {
+        max-width: 600px;
+    }
+
+    .btn {
+        margin-top: 40px;
+    }
+
+    .testimonial .content_  {
+        padding: 0 31.25rem;
+    }
+
+}
+
+/* Tablet */
+@media (max-width: 767px) {
+    nav ul {
+        padding: 0;
+    }
+    
+    nav ul a {
+        font-size: 16px;
+    }
+}
+
+/* Celular */
+
+@media (max-width: 480px) {
+    nav {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        top: unset;
+        padding: 0 15px;
+    }
+
+    nav ul a {
+        font-size: 12px;
+        margin: 10px;
+    }
+
+    nav ul a svg {
+        display: block;
+        margin: 0 auto 10px;
+    }
+}
